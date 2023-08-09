@@ -1,0 +1,5 @@
+GulpFile.js
+package-*.json
+package.json
+node_modules/
+images/.DS_Store

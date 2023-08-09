@@ -1,6 +1,12 @@
-@media (max-width: 376px) {
+@media (max-width: 575px) {
   #header .logo {
-    padding: 22px 0px 10px 0px !important;
+    padding: 22px 0px 10px 0px;
+  }
+  #header #reservation .card-text {
+    gap: 10px;
+  }
+  #header #reservation .card-text h1.title-card {
+    font-size: 30px;
   }
 }
 .icon {
@@ -38,6 +44,65 @@ body {
   background: #EAEAEA;
   padding: 15px 0px;
   z-index: 1;
+}
+#header #reservation {
+  padding: 45px 15px 45px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 35px;
+  align-items: center;
+  background: #F6F6F6;
+}
+#header #reservation .card-text {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+#header #reservation .card-text h1 {
+  font-size: 40px;
+}
+#header #reservation .card-text p {
+  font-weight: 300;
+}
+#header #reservation a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  border-radius: 25px;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  padding: 15px 20px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  transition: all ease-in-out 0.5s;
+}
+#header #reservation .btn-bg:hover {
+  background: white;
+  opacity: 0.5;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+}
+#header #reservation .btn-bg {
+  transition: all ease-in-out 0.5s;
+  border-radius: 25px;
+}
+#header #reservation a:hover {
+  transform: scale(1.1);
+}
+
+.card-text {
+  gap: 25px;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 30px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+img {
+  width: 300px;
 }
 
 * {

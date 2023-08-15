@@ -123,11 +123,9 @@ main {
 
 #choices_restaurant {
     display: flex;
-    padding:50px 0px 50px 0px;
+    padding:50px 80px;
     flex-direction: column;
-    justify-content: center;
     gap:20px;
-    align-items: center;
 }
 
 .icon {
@@ -151,27 +149,18 @@ main {
     content: '\f0ca';
 }
 .cards {
-  width: 52%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.title-section {
-    width: 52%;
 }
 
 #dishes {
     background: $grey-2;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 30px 0px 30px 0px;
+
+    padding:50px 80px;
     gap:20px;
-    h2 {
-        width: 52%;
-        align-self: center;
-    }
     .cards {
         row-gap: 30px;
     }
@@ -186,6 +175,7 @@ main {
     img {
         width: 100%;
         height:231px;
+        object-fit: cover;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }

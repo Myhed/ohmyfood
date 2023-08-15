@@ -1,0 +1,44 @@
+@media (max-width: 991px) and (min-width: 576px){
+    main {
+        .card-choice {
+            width: 100%;
+        }
+        #choices_restaurant {
+            padding:80px;
+        }
+        .cards {
+            width: 100%;
+            flex-direction: column;
+            gap: 20px;
+    
+          .card-dish {
+            width: 100%;
+          }
+        }
+        .title-section {
+            width: 100%;
+         }
+         #dishes {
+            padding: 80px;
+            .title-section {
+                width: 100%;
+            }
+         }
+       }
+}
+
+
+@media (max-width: 769px){
+    body {
+        footer {
+            width: 100%;
+            flex-direction: column;
+            gap:20px;
+            align-items: start;
+            padding-left: 15px;
+            svg {
+                align-self: flex-start;
+            }
+        }
+    }
+}

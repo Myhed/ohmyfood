@@ -61,6 +61,43 @@
     gap: 5px;
   }
 }
+@media (max-width: 991px) and (min-width: 576px) {
+  main .card-choice {
+    width: 100%;
+  }
+  main #choices_restaurant {
+    padding: 80px;
+  }
+  main .cards {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+  main .cards .card-dish {
+    width: 100%;
+  }
+  main .title-section {
+    width: 100%;
+  }
+  main #dishes {
+    padding: 80px;
+  }
+  main #dishes .title-section {
+    width: 100%;
+  }
+}
+@media (max-width: 769px) {
+  body footer {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+    padding-left: 15px;
+  }
+  body footer svg {
+    align-self: flex-start;
+  }
+}
 .icon {
   font-family: "FontAwesome";
 }

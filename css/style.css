@@ -8,6 +8,9 @@
   #header #reservation .card-text h1.title-card {
     font-size: 30px;
   }
+  main #composed-dish-day {
+    width: 100%;
+  }
   main .card-choice {
     width: 100%;
   }
@@ -106,6 +109,7 @@
   content: "\f041";
 }
 
+<<<<<<< HEAD
 .mask {
   transition: all mask 3s;
   animation-name: mask;
@@ -166,6 +170,169 @@
   justify-content: center;
 }
 
+=======
+#dish-img img {
+  width: 100%;
+}
+
+#dish-img {
+  position: relative;
+}
+
+#title-page-dish {
+  display: flex;
+  justify-content: space-between;
+}
+
+#title-page-dish h1 {
+  font-family: Shrikhand;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+#title-page-dish span {
+  align-self: center;
+}
+
+#page {
+  align-items: center;
+}
+#page .like {
+  position: relative;
+}
+#page .cards {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+#page .card-dish {
+  width: 100%;
+  position: relative;
+  flex-direction: row;
+  display: flex;
+  padding: 0px;
+  justify-content: space-between;
+}
+#page .card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.checked-dish {
+  background-color: #99E2D0;
+  font-family: "FontAwesome";
+  padding: 0px;
+  opacity: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  align-items: center;
+  transition: all ease-in-out 0.5s;
+}
+
+.checked-dish::before {
+  content: "\f058";
+  color: white;
+}
+
+.card-dish:hover .checked-dish {
+  padding: 22px;
+  opacity: 1;
+}
+
+#composed-dish-day {
+  background: #F6F6F6;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  position: relative;
+  width: 68%;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 75px 15px 50px 15px;
+  top: -374px;
+}
+
+.underline {
+  width: 40px;
+  background: #99E2D0;
+  display: block;
+  height: 5px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  gap: 30px;
+}
+.container h2 {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+.container .card-dish {
+  padding: 10px 20px;
+}
+
+.price-description {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.description {
+  font-weight: 300;
+}
+
+.price {
+  font-weight: 700;
+}
+
+@media (max-width: 576px) and (min-width: 475px) {
+  #composed-dish-day {
+    top: -80px;
+  }
+}
+@media (max-width: 475px) and (min-width: 375px) {
+  #composed-dish-day {
+    top: -80px;
+  }
+}
+@media (max-width: 375px) {
+  #composed-dish-day {
+    top: -50px;
+  }
+}
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2617255 ([base-structure-page-plat] add layout for mobile 575 to 375 display)
+=======
+=======
+>>>>>>> b90960c ([base-structure-page-plat] adapt layout for tablette 990 to 575)
+@media (max-width: 991px) and (min-width: 575px) {
+  #composed-dish-day {
+    width: 100%;
+    top: -80px;
+    padding: 75px 50px 0px 50px;
+  }
+  #page {
+    background: #F6F6F6;
+  }
+}
+<<<<<<< HEAD
+>>>>>>> b90960c ([base-structure-page-plat] adapt layout for tablette 990 to 575)
+=======
+>>>>>>> b90960c ([base-structure-page-plat] adapt layout for tablette 990 to 575)
 body {
   font-family: "Roboto";
 }
@@ -214,7 +381,8 @@ body {
 #header #reservation .card-text p {
   font-weight: 300;
 }
-#header #reservation a {
+
+.btn {
   text-decoration: none;
   color: white;
   display: block;
@@ -223,17 +391,23 @@ body {
   padding: 15px 20px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   transition: all ease-in-out 0.5s;
+  text-align: center;
 }
-#header #reservation .btn-bg:hover {
+
+.btn-bg:hover {
   background: white;
   opacity: 0.5;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
 }
-#header #reservation .btn-bg {
+
+.btn-bg {
   transition: all ease-in-out 0.5s;
   border-radius: 25px;
+  width: 220px;
+  margin: 0 auto;
 }
-#header #reservation a:hover {
+
+.btn:hover {
   transform: scale(1.1);
 }
 
@@ -440,6 +614,7 @@ footer {
   display: flex;
   justify-content: flex-start;
   flex-direction: row-reverse;
+  position: relative;
   padding: 50px 25px 30px 25px;
   gap: 50px;
   font-weight: 500;

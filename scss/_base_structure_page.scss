@@ -1,0 +1,132 @@
+#dish-img img {
+    width: 100%;
+}
+
+#dish-img {
+    position: relative;
+}
+
+#title-page-dish {
+    display: flex;
+    justify-content: space-between;
+}
+
+#title-page-dish h1 {
+    font-family: Shrikhand;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+#title-page-dish span {
+    align-self: center;
+}
+
+#page {
+    align-items: center;
+    // background: $grey-2;
+    .like {
+        position: relative;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap:20px;
+    }
+
+    .card-dish {
+        width: 100%;
+        position: relative;
+        flex-direction: row;
+        display: flex;
+        padding:0px;
+        justify-content: space-between;
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        padding:10px 20px;
+        width: 100%;
+    }
+}
+
+
+.checked-dish {
+    background-color: $tertiary;
+    font-family: "FontAwesome";
+    padding: 0px;
+    opacity: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    transition: all ease-in-out 0.5s;
+    
+}
+
+.checked-dish::before {
+    content: '\f058';
+    color:white;
+}
+
+.card-dish:hover .checked-dish {
+    padding:22px;
+    opacity: 1;
+}
+
+#composed-dish-day {
+    background: $grey-2;
+    border-top-left-radius: 50px;
+    border-top-right-radius:50px;
+    position: relative;
+    width: 68%;
+    gap:30px;
+    display: flex;
+    flex-direction: column;
+    padding: 75px 15px 50px 15px;
+    top: -374px;
+}
+
+.underline {
+    width: 40px;
+    background: $tertiary;
+    display: block;
+    height: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    // max-width: 1440px;
+    margin: 0 auto;
+    gap:30px;
+    h2 {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    text-transform: uppercase;
+    }
+    .card-dish {
+        padding: 10px 20px;
+    }
+}
+
+.price-description {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.description {
+    font-weight: 300;
+}
+.price {
+    font-weight: 700;
+}

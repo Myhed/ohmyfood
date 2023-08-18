@@ -2,15 +2,9 @@
 @import 'mobile';
 @import 'tablette';
 @import 'icon';
-<<<<<<< HEAD
 @import 'animations';
 @import 'loader';
-@import 'base_structure_page';
-@import 'mobile_page_dish';
-@import 'tablette_page_dish';
-=======
 @import 'page/page_dish';
->>>>>>> 7f27098 ([base-structure-page-plat] - add structure scss and html for page)
 
 body {
     font-family: 'Roboto';

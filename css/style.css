@@ -109,8 +109,40 @@
   content: "\f041";
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes load {
+  0% {
+    top: 0px;
+    right: 0;
+    left: 0;
+    bottom: 0px;
+  }
+  100% {
+    height: 0px;
+  }
+}
+@keyframes mask {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    bottom: 0;
+    right: 0;
+  }
+  100% {
+    position: relative;
+    z-index: 1;
+  }
+}
 .mask {
   transition: all mask 3s;
   animation-name: mask;
@@ -171,9 +203,6 @@
   justify-content: center;
 }
 
-=======
-#dish-img img {
-=======
 @media (max-width: 990px) {
   #header img {
     width: 100%;
@@ -192,7 +221,6 @@
   }
 }
 #dish-choice {
->>>>>>> 7f27098 ([base-structure-page-plat] - add structure scss and html for page)
   width: 100%;
   background: #F6F6F6;
   position: relative;
@@ -268,28 +296,6 @@
   display: block;
   background-color: #99E2D0;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 2617255 ([base-structure-page-plat] add layout for mobile 575 to 375 display)
-=======
-=======
->>>>>>> b90960c ([base-structure-page-plat] adapt layout for tablette 990 to 575)
-@media (max-width: 991px) and (min-width: 575px) {
-  #composed-dish-day {
-    width: 100%;
-    top: -80px;
-    padding: 75px 50px 0px 50px;
-  }
-  #page {
-    background: #F6F6F6;
-  }
-}
-<<<<<<< HEAD
->>>>>>> b90960c ([base-structure-page-plat] adapt layout for tablette 990 to 575)
-=======
->>>>>>> b90960c ([base-structure-page-plat] adapt layout for tablette 990 to 575)
-=======
 
 .container {
   display: flex;
@@ -319,7 +325,6 @@
   color: white;
 }
 
->>>>>>> 7f27098 ([base-structure-page-plat] - add structure scss and html for page)
 body {
   font-family: "Roboto";
 }
@@ -413,7 +418,7 @@ body {
 
 .number {
   position: absolute;
-  left: 0px;
+  left: -10px;
   background-color: #9356DC;
   color: white;
   border-radius: 50%;
@@ -426,6 +431,11 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 20px 0px 20px 0px;
+}
+
+.card-choice:hover .icon {
+  color: #9356DC;
+  font-weight: 700;
 }
 
 main {

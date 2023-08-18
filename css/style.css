@@ -110,6 +110,7 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .mask {
   transition: all mask 3s;
   animation-name: mask;
@@ -172,19 +173,68 @@
 
 =======
 #dish-img img {
+=======
+@media (max-width: 990px) {
+  #header img {
+    width: 100%;
+  }
+  #page {
+    background-color: #F6F6F6;
+  }
+  #page #dish-choice {
+    top: -80px;
+    padding: 75px 20px;
+  }
+}
+@media (max-width: 575px) {
+  #page .card-dish:hover .checked-dish {
+    padding: 15px 15px;
+  }
+}
+#dish-choice {
+>>>>>>> 7f27098 ([base-structure-page-plat] - add structure scss and html for page)
   width: 100%;
+  background: #F6F6F6;
+  position: relative;
+  top: -387px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  max-width: 1440px;
+  padding: 75px 50px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
 }
 
-#dish-img {
+#page .like {
   position: relative;
 }
+#page .btn-bg {
+  width: 186px;
+  text-align: center;
+  margin: 0 auto;
+}
+#page .card-dish {
+  display: flex;
+  width: 100%;
+}
+#page .card-dish:hover .checked-dish {
+  padding: 15px 30px;
+}
+#page .card-dish:hover .checked-dish::before {
+  content: "\f058";
+}
+#page .cards {
+  flex-direction: column;
+  gap: 15px;
+}
 
-#title-page-dish {
+#title-section {
   display: flex;
   justify-content: space-between;
 }
-
-#title-page-dish h1 {
+#title-section h1 {
   font-family: Shrikhand;
   font-size: 28px;
   font-style: italic;
@@ -192,102 +242,6 @@
   line-height: 41px;
   letter-spacing: 0em;
   text-align: left;
-}
-
-#title-page-dish span {
-  align-self: center;
-}
-
-#page {
-  align-items: center;
-}
-#page .like {
-  position: relative;
-}
-#page .cards {
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  gap: 20px;
-}
-#page .card-dish {
-  width: 100%;
-  position: relative;
-  flex-direction: row;
-  display: flex;
-  padding: 0px;
-  justify-content: space-between;
-}
-#page .card-content {
-  display: flex;
-  flex-direction: column;
-  padding: 10px 20px;
-  width: 100%;
-}
-
-.checked-dish {
-  background-color: #99E2D0;
-  font-family: "FontAwesome";
-  padding: 0px;
-  opacity: 0;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  display: flex;
-  align-items: center;
-  transition: all ease-in-out 0.5s;
-}
-
-.checked-dish::before {
-  content: "\f058";
-  color: white;
-}
-
-.card-dish:hover .checked-dish {
-  padding: 22px;
-  opacity: 1;
-}
-
-#composed-dish-day {
-  background: #F6F6F6;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
-  position: relative;
-  width: 68%;
-  gap: 30px;
-  display: flex;
-  flex-direction: column;
-  padding: 75px 15px 50px 15px;
-  top: -374px;
-}
-
-.underline {
-  width: 40px;
-  background: #99E2D0;
-  display: block;
-  height: 5px;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin: 0 auto;
-  gap: 30px;
-}
-.container h2 {
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 19px;
-  text-transform: uppercase;
-}
-.container .card-dish {
-  padding: 10px 20px;
-}
-
-.price-description {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
 }
 
 .description {
@@ -298,21 +252,23 @@
   font-weight: 700;
 }
 
-@media (max-width: 576px) and (min-width: 475px) {
-  #composed-dish-day {
-    top: -80px;
-  }
+#header img {
+  margin: 0 auto;
+  max-width: 1440px;
 }
-@media (max-width: 475px) and (min-width: 375px) {
-  #composed-dish-day {
-    top: -80px;
-  }
+
+.title-card h2 {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 18px;
 }
-@media (max-width: 375px) {
-  #composed-dish-day {
-    top: -50px;
-  }
+.title-card .underline {
+  padding: 2px;
+  width: 40px;
+  display: block;
+  background-color: #99E2D0;
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2617255 ([base-structure-page-plat] add layout for mobile 575 to 375 display)
@@ -333,6 +289,37 @@
 >>>>>>> b90960c ([base-structure-page-plat] adapt layout for tablette 990 to 575)
 =======
 >>>>>>> b90960c ([base-structure-page-plat] adapt layout for tablette 990 to 575)
+=======
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  width: 100%;
+  gap: 5px;
+}
+
+.card-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checked-dish {
+  display: flex;
+  background: #99E2D0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-family: "FontAwesome";
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 0.5s;
+}
+
+.checked-dish::before {
+  color: white;
+}
+
+>>>>>>> 7f27098 ([base-structure-page-plat] - add structure scss and html for page)
 body {
   font-family: "Roboto";
 }
@@ -391,7 +378,6 @@ body {
   padding: 15px 20px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   transition: all ease-in-out 0.5s;
-  text-align: center;
 }
 
 .btn-bg:hover {
@@ -403,8 +389,6 @@ body {
 .btn-bg {
   transition: all ease-in-out 0.5s;
   border-radius: 25px;
-  width: 220px;
-  margin: 0 auto;
 }
 
 .btn:hover {

@@ -52,9 +52,14 @@
         align-items: start;
         padding-left: 15px;
         svg {
+        }
+        p.logo-footer {
             align-self: flex-start;
+            width: 100%;
+            
         }
     }
+    
     #footer-menu {
      flex-direction: column;
      gap:10px;

@@ -41,6 +41,25 @@
     flex-direction: column;
     gap: 15px;
   }
+
+}
+
+#header {
+    & .logo {
+        display: flex;
+        // padding:30px;
+        align-items: center;
+        padding-left:30px;
+        padding-right: 30px;
+    }
+}
+
+.logo  {
+    p {
+        margin:0 auto;
+        font-family: "Shrikhand";
+        font-size: 45px;
+    }
 }
 
 #title-section {
@@ -112,4 +131,10 @@
 
 .checked-dish::before {
     color:white;
+}
+
+.arrow::before {
+    content: '\f060';
+    font-size: 45px;
+    color:black;
 }

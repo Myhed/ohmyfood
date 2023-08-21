@@ -4,4 +4,15 @@
             padding: 15px 15px;
           }
     }
+
+    #header {
+        & .logo p {
+            font-size: 35px;
+        }
+        & .logo {
+            .arrow::before {
+                font-size: 35px;
+            }
+        }
+    }
 }

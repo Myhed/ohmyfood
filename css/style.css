@@ -149,6 +149,7 @@
   100% {
     position: relative;
     z-index: 1;
+    opacity: 0;
   }
 }
 .mask {
@@ -271,6 +272,10 @@
   flex-direction: column;
   gap: 15px;
 }
+#page .card-text {
+  display: flex;
+  justify-content: space-between;
+}
 
 #header .logo {
   display: flex;
@@ -301,6 +306,8 @@
 
 .description {
   font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .price {
@@ -330,11 +337,6 @@
   padding: 15px;
   width: 100%;
   gap: 5px;
-}
-
-.card-text {
-  display: flex;
-  justify-content: space-between;
 }
 
 .checked-dish {
@@ -389,12 +391,18 @@ body {
   display: flex;
   text-align: center;
   flex-direction: column;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 #header #reservation .card-text h1 {
   font-size: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 #header #reservation .card-text p {
   font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .logo {
@@ -432,10 +440,6 @@ body {
 
 .btn:hover {
   transform: scale(1.1);
-}
-
-.card-text {
-  gap: 25px;
 }
 
 a {
@@ -554,9 +558,6 @@ main {
 
 .like {
   font-family: "FontAwesome";
-  position: absolute;
-  width: 22px;
-  right: 15px;
   font-weight: 300;
 }
 
@@ -604,6 +605,7 @@ main {
   padding: 20px;
   display: flex;
   position: relative;
+  justify-content: space-between;
 }
 .card-content .icon {
   color: black;

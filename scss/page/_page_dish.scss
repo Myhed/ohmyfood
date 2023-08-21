@@ -41,6 +41,11 @@
     flex-direction: column;
     gap: 15px;
   }
+  
+  .card-text {
+      display: flex;
+      justify-content: space-between;
+  }
 
 }
 
@@ -78,6 +83,8 @@
 
 .description {
     font-weight: 300;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .price{
@@ -111,11 +118,6 @@
         padding: 15px;
         width: 100%;
         gap:5px;
-}
-
-.card-text {
-    display: flex;
-    justify-content: space-between;
 }
 
 .checked-dish {

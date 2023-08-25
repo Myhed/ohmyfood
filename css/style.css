@@ -220,7 +220,6 @@
     background-color: #F6F6F6;
   }
   #page #dish-choice {
-    top: -80px;
     padding: 75px 20px;
   }
 }
@@ -320,7 +319,16 @@
 
 #header img {
   margin: 0 auto;
-  max-width: 1440px;
+}
+
+.banner {
+  width: 100%;
+  height: 600px;
+}
+.banner img {
+  object-fit: cover;
+  width: 100%;
+  height: 383px;
 }
 
 .title-card h2 {
@@ -696,3 +704,5 @@ footer a {
   margin: 0px;
   box-sizing: border-box;
 }
+
+/*# sourceMappingURL=style.css.map */

@@ -32,19 +32,22 @@
         width: 100%;
     }
     .card-dish:hover .checked-dish {
-    padding: 15px 30px;
+    padding: 15px 20px;
   }
-  .card-dish:hover .checked-dish::before{
+
+.card-dish:hover .checked-dish::before{
     content: '\f058';
-  }
-  .cards {
+}
+.cards {
     flex-direction: column;
     gap: 15px;
-  }
+}
   
   .card-text {
       display: flex;
+    //   flex-wrap: wrap;
       justify-content: space-between;
+    
   }
 
 }
@@ -85,6 +88,7 @@
     font-weight: 300;
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .price{
@@ -118,6 +122,9 @@
         padding: 15px;
         width: 100%;
         gap:5px;
+        overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .checked-dish {

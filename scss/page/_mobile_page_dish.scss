@@ -3,7 +3,11 @@
         .card-dish:hover .checked-dish {
             padding: 15px 15px;
           }
+         & .card-dish:hover .checked-dish {
+              padding: 15px 15px;
+        }
     }
+
 
     #header {
         & .logo p {

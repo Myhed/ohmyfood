@@ -228,6 +228,9 @@
   #page .card-dish:hover .checked-dish {
     padding: 15px 15px;
   }
+  #page .card-dish:hover .checked-dish {
+    padding: 15px 15px;
+  }
   #header .logo p {
     font-size: 35px;
   }
@@ -263,7 +266,7 @@
   width: 100%;
 }
 #page .card-dish:hover .checked-dish {
-  padding: 15px 30px;
+  padding: 15px 20px;
 }
 #page .card-dish:hover .checked-dish::before {
   content: "\f058";
@@ -308,6 +311,7 @@
   font-weight: 300;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .price {
@@ -337,6 +341,9 @@
   padding: 15px;
   width: 100%;
   gap: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .checked-dish {

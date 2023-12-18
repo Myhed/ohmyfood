@@ -148,7 +148,7 @@ main {
 }
 
 .store {
-    color:$primary;   
+    // color:$primary;   
 }
 
 .store::before {
@@ -207,13 +207,24 @@ main {
 }
 
 .like {
-    font-family: "FontAwesome";
+    font-size: 25px;
     font-weight: 300;
+    transition: all ease-in-out 0.3s;
+    // padding:6px;
 }
 
-.like::before {
-    font-size:25px;
-    content:'\f08a';
+// .like::before {
+//     font-size:25px;
+//     content:'\f08a';
+// }
+
+.like:hover{
+    font-weight: 900;
+    // background: -webkit-gradient(linear, left top, left bottom, from(#f00), to(#333));
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background: -webkit-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .card-content input[type="checkbox"] {
@@ -223,30 +234,54 @@ main {
     opacity: 0;
 }
 
-#liked-1:checked + label > .like::before {
-   content:'\f004';
+.like-recipe input[type="checkbox"]{
+    position: absolute;
+    bottom:40px;
+    right: 17px;
+    opacity: 0;
+}
+
+#liked-recipe:checked + label > .like {
+//    content:'\f004';
+    font-weight: 900;
    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+   background: -webkit-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
    background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+#liked-1:checked + label > .like::before {
+    //    content:'\f004';
+        font-weight: 900;
+       background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+       background: -webkit-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+       background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
 #liked-2:checked + label > .like::before {
-    content:'\f004';
+    // content:'\f004';
+    font-weight: 900;
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background: -webkit-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
      background-clip: text;
     -webkit-text-fill-color: transparent;
  }
 
  #liked-3:checked + label > .like::before {
-    content:'\f004';
+    // content:'\f004';
+    font-weight: 900;
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background: -webkit-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
      background-clip: text;
     -webkit-text-fill-color: transparent;
  }
 
  #liked-4:checked + label > .like::before {
-    content:'\f004';
+    // content:'\f004';
+    font-weight: 900;
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background: -webkit-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
      background-clip: text;
     -webkit-text-fill-color: transparent;
  }

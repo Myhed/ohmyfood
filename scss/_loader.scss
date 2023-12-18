@@ -34,18 +34,11 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.loader img {
-    width: 30px;
-}
 
-.loader .pizza {
-    transform: scale(2.1);
-}
-
-.shadow {
-    opacity: 0.3;
-    transform: rotate(180deg);
-}
+// .shadow {
+//     opacity: 0.3;
+//     transform: rotate(180deg);
+// }
 
 .load {
     animation-name: load;

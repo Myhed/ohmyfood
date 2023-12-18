@@ -52,6 +52,28 @@
 
 }
 
+.cards.dish-animate {
+    transform: translateX(-100px);
+    opacity: 0;
+    animation: 1.5s forwards cards-animate-dish;
+}
+
+.cards.dish-animate:nth-child(1){
+    animation-duration: 0.5ms;
+}
+
+.cards.dish-animate:nth-child(2){
+    animation-duration: 1.5s;
+}
+
+.cards.dish-animate:nth-child(3){
+    animation-duration:2.5s;
+}
+
+.cards.dish-animate:nth-child(4){
+    animation-duration: 3.5s;
+}
+
 .h3{
     overflow: hidden;
     text-overflow: ellipsis;

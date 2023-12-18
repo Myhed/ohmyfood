@@ -152,6 +152,15 @@
     opacity: 0;
   }
 }
+@keyframes cards-animate-dish {
+  0% {
+    transform: translateX(-80px);
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
 .mask {
   transition: all mask 3s;
   animation-name: mask;
@@ -185,19 +194,6 @@
   align-items: center;
   justify-content: center;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.loader img {
-  width: 30px;
-}
-
-.loader .pizza {
-  transform: scale(2.1);
-}
-
-.shadow {
-  opacity: 0.3;
-  transform: rotate(180deg);
 }
 
 .load {
@@ -277,6 +273,28 @@
 #page .card-text {
   display: flex;
   justify-content: space-between;
+}
+
+.cards.dish-animate {
+  transform: translateX(-100px);
+  opacity: 0;
+  animation: 1.5s forwards cards-animate-dish;
+}
+
+.cards.dish-animate:nth-child(1) {
+  animation-duration: 0.5ms;
+}
+
+.cards.dish-animate:nth-child(2) {
+  animation-duration: 1.5s;
+}
+
+.cards.dish-animate:nth-child(3) {
+  animation-duration: 2.5s;
+}
+
+.cards.dish-animate:nth-child(4) {
+  animation-duration: 3.5s;
 }
 
 .h3 {
@@ -518,10 +536,6 @@ main {
   color: #7E7E7E;
 }
 
-.store {
-  color: #9356DC;
-}
-
 .store::before {
   content: "\f54e";
 }
@@ -577,13 +591,17 @@ main {
 }
 
 .like {
-  font-family: "FontAwesome";
+  font-size: 25px;
   font-weight: 300;
+  transition: all ease-in-out 0.3s;
 }
 
-.like::before {
-  font-size: 25px;
-  content: "\f08a";
+.like:hover {
+  font-weight: 900;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: -webkit-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .card-content input[type=checkbox] {
@@ -593,30 +611,49 @@ main {
   opacity: 0;
 }
 
-#liked-1:checked + label > .like::before {
-  content: "\f004";
+.like-recipe input[type=checkbox] {
+  position: absolute;
+  bottom: 40px;
+  right: 17px;
+  opacity: 0;
+}
+
+#liked-recipe:checked + label > .like {
+  font-weight: 900;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: -webkit-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#liked-1:checked + label > .like::before {
+  font-weight: 900;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: -webkit-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 #liked-2:checked + label > .like::before {
-  content: "\f004";
+  font-weight: 900;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: -webkit-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 #liked-3:checked + label > .like::before {
-  content: "\f004";
+  font-weight: 900;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: -webkit-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 #liked-4:checked + label > .like::before {
-  content: "\f004";
+  font-weight: 900;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: -webkit-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }

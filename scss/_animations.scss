@@ -37,3 +37,16 @@
          opacity: 0;
      }
  }
+
+
+ @keyframes cards-animate-dish {
+    0%{
+        transform: translateX(-80px);
+    }
+
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+ }

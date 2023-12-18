@@ -279,6 +279,11 @@
   justify-content: space-between;
 }
 
+.h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 #header .logo {
   display: flex;
   align-items: center;

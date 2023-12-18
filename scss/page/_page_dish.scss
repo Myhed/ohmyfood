@@ -52,6 +52,11 @@
 
 }
 
+.h3{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 #header {
     & .logo {
         display: flex;

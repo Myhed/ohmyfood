@@ -1,112 +1,74 @@
-@media (max-width: 576px) {
-  #header .logo {
-    padding: 22px 0px 10px 0px;
-  }
-  #header #reservation .card-text {
-    gap: 10px;
-  }
-  #header #reservation .card-text h1.title-card {
-    font-size: 30px;
-  }
-  main #composed-dish-day {
-    width: 100%;
-  }
-  main .card-choice {
-    width: 100%;
-  }
-  main #choices_restaurant {
-    padding: 50px 15px;
-  }
-  main .cards {
-    width: 100%;
-    flex-direction: column;
+@media (min-width: 828px) {
+  #choices_restaurant .cards {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
     gap: 20px;
   }
-  main .cards .card-dish {
-    width: 100%;
+  .card-choice {
+    max-width: 350px;
   }
-  main .title-section {
-    width: 100%;
+  #choices_restaurant {
+    padding: 50px 40px !important;
   }
-  main #dishes {
-    padding: 50px 15px;
+  #dishes {
+    padding: 50px 40px !important;
+    gap: 20px;
   }
-  main #dishes .title-section {
-    width: 100%;
+  #dishes .cards {
+    row-gap: 30px;
   }
   body footer {
-    width: 100%;
-    flex-direction: column;
-    gap: 20px;
-    align-items: start;
-    padding-left: 15px;
+    flex-direction: row-reverse;
+    padding: 50px 25px 30px 25px;
+    gap: 50px;
+    align-items: center;
   }
-  body footer p.logo-footer {
-    align-self: flex-start;
-    width: 100%;
-  }
-  body #footer-menu {
-    flex-direction: column;
-    gap: 10px;
-    align-items: start;
-    width: 100%;
-  }
-  body #proposition {
-    flex-direction: column;
-    align-items: start;
+  footer #proposition {
+    align-items: center;
+    flex-direction: row;
     gap: 5px;
   }
-  body #proposition li {
-    gap: 5px;
+  footer #proposition li {
+    display: flex;
+    gap: 15px;
   }
-  body #apropos {
-    flex-direction: column;
-    align-items: start;
-    gap: 5px;
+  footer #apropos {
+    align-items: center;
+    flex-direction: row;
+  }
+  footer #footer-menu {
+    align-items: center;
+    gap: 50px;
+    flex-direction: row;
   }
 }
-@media (max-width: 991px) and (min-width: 576px) {
-  main .card-choice {
-    width: 100%;
+@media (min-width: 900px) {
+  #page #dish-choice .like-recipe {
+    margin: 5px 15px !important;
   }
-  main #choices_restaurant {
-    padding: 80px;
+  #page #dish-choice #title-section {
+    margin: 0 auto !important;
+    justify-content: none;
   }
-  main .cards {
-    width: 100%;
-    flex-direction: column;
+  #page .card-dish {
+    width: 100% !important;
+  }
+  #dishes .card-dish {
+    width: 46% !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+  }
+  #dishes .cards {
+    flex-direction: row;
+    justify-content: space-between;
     gap: 20px;
-  }
-  main .cards .card-dish {
-    width: 100%;
-  }
-  main .title-section {
-    width: 100%;
-  }
-  main #dishes {
-    padding: 80px;
-  }
-  main #dishes .title-section {
-    width: 100%;
   }
 }
-@media (max-width: 769px) {
-  body footer {
-    width: 100%;
-    flex-direction: column;
-    gap: 20px;
-    align-items: start;
-    padding-left: 15px;
-  }
-  body footer p.logo-footer {
-    align-self: flex-start;
-    width: 100%;
-  }
-  body footer svg {
-    align-self: flex-start;
-  }
-  body footer #footer-menu {
+@media (min-width: 1700px) {
+  #choices_restaurant .cards {
     justify-content: flex-start;
+    gap: 70px;
   }
 }
 .icon {
@@ -426,6 +388,7 @@ body {
   background: #F6F6F6;
 }
 #header #reservation .card-text {
+  gap: 10px;
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -433,7 +396,7 @@ body {
   text-overflow: ellipsis;
 }
 #header #reservation .card-text h1 {
-  font-size: 40px;
+  font-size: 30px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -444,8 +407,8 @@ body {
 }
 
 .logo {
-  padding: 22px 0px;
   position: relative;
+  padding: 22px 0px 10px 0px;
   z-index: 2;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
   text-align: center;
@@ -487,8 +450,7 @@ a {
 
 .card-choice {
   display: flex;
-  justify-content: center;
-  width: 30%;
+  width: 100%;
   position: relative;
   background: #F6F6F6;
   border-radius: 20px;
@@ -526,7 +488,7 @@ main {
 
 #choices_restaurant {
   display: flex;
-  padding: 50px 80px;
+  padding: 50px 15px;
   flex-direction: column;
   gap: 20px;
 }
@@ -551,22 +513,24 @@ main {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
 }
 
 #dishes {
   background: #F6F6F6;
   display: flex;
   flex-direction: column;
-  padding: 50px 80px;
+  padding: 50px 15px;
   gap: 20px;
 }
-#dishes .cards {
-  row-gap: 30px;
+#dishes .title-section {
+  width: 100%;
 }
 
 .card-dish {
-  width: 46%;
+  width: 100%;
   background: white;
   border-radius: 20px;
   position: relative;
@@ -673,12 +637,16 @@ footer {
   background: #353535;
   display: flex;
   justify-content: flex-start;
-  flex-direction: row-reverse;
+  align-items: start;
+  flex-direction: column;
   position: relative;
-  padding: 50px 25px 30px 25px;
-  gap: 50px;
+  padding: 50px 15px 30px 25px;
+  gap: 20px;
   font-weight: 500;
   color: white;
+}
+footer p.logo-footer {
+  align-self: flex-start;
 }
 footer img {
   height: 27px;
@@ -690,19 +658,21 @@ footer a {
 
 #proposition {
   display: flex;
-  align-items: center;
-  gap: 15px;
+  flex-direction: column;
+  align-items: start;
+  gap: 5px;
   font-weight: 700;
 }
 #proposition li {
   display: flex;
-  gap: 15px;
+  gap: 5px;
 }
 
 #apropos {
   display: flex;
-  align-items: center;
-  gap: 12px;
+  flex-direction: column;
+  align-items: start;
+  gap: 5px;
 }
 
 .couvert::before {
@@ -725,8 +695,9 @@ footer a {
 
 #footer-menu {
   display: flex;
-  align-items: center;
-  gap: 50px;
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
   width: 100%;
   justify-content: end;
 }

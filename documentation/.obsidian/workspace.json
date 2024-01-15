@@ -1,0 +1,192 @@
+{
+  "main": {
+    "id": "8e58fc18b24b7901",
+    "type": "split",
+    "children": [
+      {
+        "id": "7a2ca34c686569da",
+        "type": "tabs",
+        "dimension": 34.912043301759134,
+        "children": [
+          {
+            "id": "2c9e5756b1ab9b25",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "slide.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "d0dba4b2a51b966b",
+        "type": "tabs",
+        "dimension": 30.311231393775373,
+        "children": [
+          {
+            "id": "1a80847b9c7da2a5",
+            "type": "leaf",
+            "state": {
+              "type": "reveal-preview-view",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "37c4fc96a24f85c4",
+        "type": "tabs",
+        "dimension": 34.776725304465494,
+        "children": [
+          {
+            "id": "e879c9d675e8986b",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5697f7a6487f942c",
+    "type": "split",
+    "children": [
+      {
+        "id": "322366f5feca6c4c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "900ccda982e72499",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "225b7d5b09f5082e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "28a7945d7c94cbb2",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "3023488f2035d4bc",
+    "type": "split",
+    "children": [
+      {
+        "id": "0ca14c4ad93256db",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9679f09a7c4430d1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "slide.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "77648f2a0923687a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "slide.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "235160a86e1c6af1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e42c44ed1dcbb046",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "slide.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Ouvrir le sélecteur rapide": false,
+      "graph:Ouvrir la vue graphique": false,
+      "canvas:Créer une nouvelle toile": false,
+      "daily-notes:Ouvrir la note quotidienne": false,
+      "templates:Insérer le modèle": false,
+      "command-palette:Ouvrir la palette de commandes": false,
+      "obsidian-advanced-slides:Show Slide Preview": false
+    }
+  },
+  "active": "2c9e5756b1ab9b25",
+  "lastOpenFiles": [
+    "slide.md",
+    "image/concurrence.png",
+    "image/concurrnece.png",
+    "image/Capture d'écran 2024-01-10 174106.png",
+    "image",
+    "Nouveau dossier/Capture d'écran 2024-01-10 174106.png",
+    "Capture d'écran 2024-01-10 174106.png",
+    "Nouveau dossier"
+  ]
+}

@@ -1,0 +1,122 @@
+@media (min-width: 828px) {
+    #choices_restaurant .cards
+    {
+    // display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    // width: 100%;
+    gap: 20px;
+    // max-width: 350px;
+    // flex-direction: row;
+    }
+
+
+    .card-choice {
+       max-width: 350px;
+    }
+
+    #choices_restaurant {
+        padding: 50px 40px!important;
+    }
+#dishes
+{
+  padding: 50px 40px!important;
+  gap: 20px;
+  .cards {
+        row-gap: 30px;
+    }
+}
+
+
+body footer {
+    flex-direction: row-reverse;
+    padding:50px 25px 30px 25px;
+    gap:50px;
+    align-items: center;
+}
+
+footer #proposition {
+    align-items: center;
+    flex-direction: row;
+    gap:5px;
+    li {
+        display: flex;
+        gap:15px;
+    }
+}
+footer #apropos{
+    align-items: center;
+    flex-direction: row;
+}
+
+// footer p.logo-footer {
+//     // align-self: ;
+//     // width: 6%;
+// }
+
+footer #footer-menu {
+    align-items: center;
+    gap:50px;
+    flex-direction: row;
+}
+
+}
+
+
+@media (min-width: 900px) {
+    // body {
+    //     background-color: red;
+    // }
+
+    #page #dish-choice .like-recipe {
+        margin:5px 15px!important;
+
+    }
+
+    #page #dish-choice #title-section {
+        margin: 0 auto !important;
+        justify-content: none;
+        // background: red;
+    }
+
+    #page .card-dish {
+        width: 100%!important;
+    }
+
+   #dishes .card-dish {
+        width: 46%!important;
+        flex-direction: row!important;
+        flex-wrap: nowrap!important;
+    }
+
+    #dishes .cards
+    {
+    // display: flex;
+    // flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    // width: 100%;
+    gap: 20px;
+    // max-width: 350px;
+    // flex-direction: row;
+    }
+
+}
+@media (min-width: 1700px) {
+    // body{
+    //     background-color: red;
+    // }
+    #choices_restaurant .cards
+    {
+    // display: flex;
+    // flex-wrap: nowrap;
+    // flex-direction: row;
+    justify-content: flex-start;
+    // width: 100%;
+    gap: 70px;
+    // max-width: 350px;
+    // flex-direction: row;
+    }
+
+}

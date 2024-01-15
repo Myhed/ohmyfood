@@ -1,6 +1,7 @@
 @import 'variables';
-@import 'mobile';
-@import 'tablette';
+// @import 'mobile';
+// @import 'tablette';
+@import 'desktop';
 @import 'icon';
 @import 'animations';
 @import 'loader';
@@ -32,13 +33,15 @@ body {
         align-items: center;
         background: $grey-2;
         .card-text {
+            gap:10px;
             display: flex;
             text-align: center;
             flex-direction: column;
             overflow: hidden;
             text-overflow: ellipsis;
             h1 {
-               font-size: 40px;
+            //    font-size: 40px; Desktop
+               font-size: 30px;
                overflow: hidden;
                text-overflow: ellipsis;
             }
@@ -52,8 +55,9 @@ body {
 }
 
 .logo{
-    padding:22px 0px;
+    // padding:22px 0px; Desktop
     position: relative;
+    padding:22px 0px 10px 0px;
     z-index: 2;
     box-shadow: 0px 2px 4px 0px #00000026;
     text-align: center;
@@ -97,8 +101,9 @@ a {
 
 .card-choice {
     display: flex;
-    justify-content: center;
-    width: 30%;
+    // justify-content: center;
+    width: 100%;
+    // max-width: 300px;
     position: relative;
     background: $grey-2;
     border-radius:20px;
@@ -137,7 +142,8 @@ main {
 
 #choices_restaurant {
     display: flex;
-    padding:50px 80px;
+    // padding:50px 80px; Desktop
+    padding: 50px 15px;
     flex-direction: column;
     gap:20px;
 }
@@ -165,7 +171,10 @@ main {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+//   justify-content: space-between; Desktop
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
 }
 
 #dishes {
@@ -173,16 +182,22 @@ main {
     display: flex;
     flex-direction: column;
 
-    padding:50px 80px;
+    // padding:50px 80px; Desktop
+    padding:50px 15px;
     gap:20px;
-    .cards {
-        row-gap: 30px;
+    // .cards {
+    //     row-gap: 30px;
+    // } Desktop
+
+    .title-section {
+        width: 100%;
     }
 }
 
 
 .card-dish {
-    width: 46%;
+    // width: 46%; Desktop
+    width: 100%;
     background: white;
     border-radius: 20px;
     position: relative;
@@ -213,10 +228,6 @@ main {
     // padding:6px;
 }
 
-// .like::before {
-//     font-size:25px;
-//     content:'\f08a';
-// }
 
 .like:hover{
     font-weight: 900;
@@ -286,37 +297,6 @@ main {
     -webkit-text-fill-color: transparent;
  }
 
-//  #liked-4:not(:checked) + label > .like::before {
-//     content:'\f08a';
-//     background: black;
-//     background-clip: text;
-//     -webkit-text-fill-color: transparent;
-//     transition: all ease-in-out .3s;
-//  }
-
-//  #liked-3:not(:checked) + label > .like::before {
-//     content:'\f08a';
-//     background: black;
-//     background-clip: text;
-//     -webkit-text-fill-color: transparent;
-//     transition: all ease-in-out .3s;
-//  }
-
-//  #liked-2:not(:checked) + label > .like::before {
-//     content:'\f08a';
-//     background: black;
-//     background-clip: text;
-//     -webkit-text-fill-color: transparent;
-//     transition: all ease-in-out .3s;
-//  }
-
-//  #liked-1:not(:checked) + label > .like::before {
-//     content:'\f08a';
-//     background: black;
-//     background-clip: text;
-//     -webkit-text-fill-color: transparent;
-//     transition: all ease-in-out .3s;
-//  }
 
 .card-content {
     padding: 20px;
@@ -333,12 +313,21 @@ footer {
     background:$grey-4;
     display: flex;
     justify-content: flex-start;
-    flex-direction: row-reverse;
+    align-items: start;
+    // flex-direction: row-reverse; Desktop
+    flex-direction: column;
     position: relative;
-    padding:50px 25px 30px 25px;
-    gap:50px;
+    // padding:50px 25px 30px 25px; Desktop
+    padding: 50px 15px 30px 25px;
+    // gap:50px; Desktop
+    gap: 20px;
     font-weight: 500;
     color:white;
+    p.logo-footer {
+        align-self: flex-start;
+        // width: 100%;
+        
+    }
     img {
         height: 27px;
     }
@@ -351,19 +340,25 @@ footer {
 
 #proposition {
     display:flex;
-    align-items: center;
-    gap:15px;
+    // align-items: center; Desktop
+    // gap:15px; Desktop
+    flex-direction: column;
+    align-items: start;
+    gap:5px;
     font-weight: 700;
     li {
         display: flex;
-        gap:15px;
+        // gap:15px; Desktop
+        gap: 5px;
     }
 }
 
 #apropos {
     display:flex;
-    align-items: center;
-    gap:12px;
+    flex-direction: column;
+    // align-items: center; Desktop
+    align-items: start;
+    gap:5px;
 }
 
 .couvert::before {
@@ -386,8 +381,11 @@ footer {
 
 #footer-menu {
     display: flex;
-    align-items: center;
-    gap:50px;
+    flex-direction: column;
+    // align-items: center; Desktop
+    gap:10px;
+    align-items: start;
+    // gap:50px; Desktop
     width: 100%;
     justify-content: end;
 

@@ -1,84 +1,84 @@
-@media (max-width: 576px){
-   #header {
-    .logo {
-        padding:22px 0px 10px 0px;
-    }
-    #reservation {
-        .card-text {
-            gap:10px;
-            h1.title-card {
-                font-size: 30px;
-            }
-        }
-     }
-   }
+// // @media (max-width: 576px){
+//    #header {
+//     .logo {
+//         padding:22px 0px 10px 0px;
+//     }
+//     #reservation {
+//         .card-text {
+//             gap:10px;
+//             h1.title-card {
+//                 font-size: 30px;
+//             }
+//         }
+//      }
+//    }
 
-   main {
-    #composed-dish-day {
-        width: 100%;
-    }
+//    main {
+//     #composed-dish-day {
+//         width: 100%;
+//     }
     
-    .card-choice {
-        width: 100%;
-    }
-    #choices_restaurant {
-        padding: 50px 15px;
-    }
-    .cards {
-        width: 100%;
-        flex-direction: column;
-        gap: 20px;
+//     .card-choice {
+//         width: 100%;
+//     }
+//     #choices_restaurant {
+//         padding: 50px 15px;
+//     }
+//     .cards {
+//         width: 100%;
+//         flex-direction: column;
+//         gap: 20px;
 
-      .card-dish {
-        width: 100%;
-      }
-    }
-    .title-section {
-        width: 100%;
-     }
-     #dishes {
-        padding: 50px 15px;
-        .title-section {
-            width: 100%;
-        }
-     }
-   }
+//       .card-dish {
+//         width: 100%;
+//       }
+//     }
+//     .title-section {
+//         width: 100%;
+//      }
+//      #dishes {
+//         padding: 50px 15px;
+//         .title-section {
+//             width: 100%;
+//         }
+//      }
+//    }
    
-   body {
-    footer {
-        width: 100%;
-        flex-direction: column;
-        gap:20px;
-        align-items: start;
-        padding-left: 15px;
-        svg {
-        }
-        p.logo-footer {
-            align-self: flex-start;
-            width: 100%;
+//    body {
+//     footer {
+//         width: 100%;
+//         flex-direction: column;
+//         gap:20px;
+//         align-items: start;
+//         padding-left: 15px;
+//         svg {
+//         }
+//         p.logo-footer {
+//             align-self: flex-start;
+//             width: 100%;
             
-        }
-    }
+//         }
+//     }
     
-    #footer-menu {
-     flex-direction: column;
-     gap:10px;
-     align-items: start;
-     width: 100%;
-    }
-    #proposition {
-     flex-direction: column;
-     align-items: start;
-     gap:5px;
-     li {
-        gap: 5px;
-     }
-    }
-    #apropos {
-     flex-direction: column;
-     align-items: start;
-     gap:5px;
-    }
-   }
-}
+//     #footer-menu {
+//      flex-direction: column;
+//      gap:10px;
+//      align-items: start;
+//      width: 100%;
+//     }
+//     #proposition {
+//      flex-direction: column;
+//      align-items: start;
+//      gap:5px;
+//      li {
+//         gap: 5px;
+//      }
+//     }
+//     #apropos {
+//      flex-direction: column;
+//      align-items: start;
+//      gap:5px;
+//     }
+//    }
+// // }
 
